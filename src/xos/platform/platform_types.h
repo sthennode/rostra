@@ -150,9 +150,9 @@ typedef unsigned char uint8_t;
 #else /*/ defined(MACOSX) /*/
 #endif /*/ defined(MACOSX) /*/
 
+typedef char tchar_t;
 typedef uint8_t byte_t;
 typedef uint16_t word_t;
-typedef char tchar_t;
 
 /*/
 /// Unix to Windows types
@@ -308,6 +308,8 @@ typedef const BYTE* PCBYTE;
 typedef const PCBYTE* PCPCBYTE;
 typedef PCBYTE* PPCBYTE;
 typedef PBYTE* PPBYTE;
+
+typedef void* pointer_t;
 
 typedef useconds_t nseconds_t;
 typedef useconds_t mseconds_t;
