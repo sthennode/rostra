@@ -35,6 +35,10 @@
 %File,%(%else-then(%File%,%(%file%)%)%)%,%
 %FILE,%(%else-then(%FILE%,%(%toupper(%File%)%)%)%)%,%
 %file,%(%else-then(%_File%,%(%tolower(%File%)%)%)%)%,%
+%base,%(%else-then(%base%,%(%filebase(%File%)%)%)%)%,%
+%Base,%(%else-then(%Base%,%(%base%)%)%)%,%
+%BASE,%(%else-then(%BASE%,%(%toupper(%Base%)%)%)%)%,%
+%base,%(%else-then(%_Base%,%(%tolower(%Base%)%)%)%)%,%
 %extension,%(%else-then(%extension%,%(hpp)%)%)%,%
 %Extension,%(%else-then(%Extension%,%(%extension%)%)%)%,%
 %EXTENSION,%(%else-then(%EXTENSION%,%(%toupper(%Extension%)%)%)%)%,%
@@ -54,6 +58,10 @@
 %Include_directory,%(%else-then(%Include_directory%,%(%include_directory%)%)%)%,%
 %INCLUDE_DIRECTORY,%(%else-then(%INCLUDE_DIRECTORY%,%(%toupper(%Include_directory%)%)%)%)%,%
 %include_directory,%(%else-then(%_Include_directory%,%(%tolower(%Include_directory%)%)%)%)%,%
+%include,%(%else-then(%include%,%(xos/base/base.hpp)%)%)%,%
+%Include,%(%else-then(%Include%,%(%include%)%)%)%,%
+%INCLUDE,%(%else-then(%INCLUDE%,%(%toupper(%Include%)%)%)%)%,%
+%include,%(%else-then(%_Include%,%(%tolower(%Include%)%)%)%)%,%
 %namespace,%(%else-then(%namespace%,%(%Include_directory%)%)%)%,%
 %Namespace,%(%else-then(%Namespace%,%(%namespace%)%)%)%,%
 %NAMESPACE,%(%else-then(%NAMESPACE%,%(%toupper(%Namespace%)%)%)%)%,%

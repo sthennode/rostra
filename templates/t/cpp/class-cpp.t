@@ -39,12 +39,12 @@
 /// or otherwise) arising in any way out of the use of this software, 
 /// even if advised of the possibility of such damage.
 ///
-///   File: %File%.%Extension%
+///   File: %Base%.%Extension%
 ///
 /// Author: $author$
 ///   Date: %date()%
 ///////////////////////////////////////////////////////////////////////
-#include "%Include_directory%/%Name%.hpp"
+#include "%Include_directory%/%Base%.hpp"
 
 %Namespace_begin%%
 %///////////////////////////////////////////////////////////////////////

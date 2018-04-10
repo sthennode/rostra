@@ -39,15 +39,15 @@
 /// or otherwise) arising in any way out of the use of this software, 
 /// even if advised of the possibility of such damage.
 ///
-///   File: %File%.%Extension%
+///   File: %Base%.%Extension%
 ///
 /// Author: $author$
 ///   Date: %date()%
 ///////////////////////////////////////////////////////////////////////
-#ifndef %IFNDEF_DIRECTORY%_%NAME%_%EXTENSION%
-#define %IFNDEF_DIRECTORY%_%NAME%_%EXTENSION%
+#ifndef %IFNDEF_DIRECTORY%_%BASE%_%EXTENSION%
+#define %IFNDEF_DIRECTORY%_%BASE%_%EXTENSION%
 
-#include "xos/base/base.hpp"
+#include "%Include%"
 
 %Namespace_begin%%
 %typedef %Implements% %Implements%t_implements;
@@ -81,6 +81,6 @@ public:
 };
 typedef %Name%t<> %Name%;
 %Namespace_end%
-#endif /// %IFNDEF_DIRECTORY%_%NAME%_%EXTENSION% 
+#endif /// %IFNDEF_DIRECTORY%_%BASE%_%EXTENSION% 
 %
 %)%)%
