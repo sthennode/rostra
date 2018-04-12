@@ -19,7 +19,7 @@
 %#   Date: 4/1/2018
 %########################################################################
 %with(%
-%name,%(%else-then(%do(%name%)%,%(name)%)%)%,%
+%name,%(%else-then(%do(%name%)%,%(%else-then(%do(%implements%)%,%(name)%)%)%)%)%,%
 %Name,%(%else-then(%Name%,%(%name%)%)%)%,%
 %NAME,%(%else-then(%NAME%,%(%toupper(%Name%)%)%)%)%,%
 %name,%(%else-then(%_Name%,%(%tolower(%Name%)%)%)%)%,%
