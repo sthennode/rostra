@@ -143,12 +143,22 @@ typedef ATOM NULL_ATOM_T;
 /// ...
 /*/
 typedef unsigned char uint8_t;
+#if !defined(OBJC_BOOL_DEFINED)
+typedef int BOOL;
+#endif // !defined(OBJC_BOOL_DEFINED)
+#if !defined(_MACH_VM_TYPES_H_)
+typedef void* pointer_t;
+#endif /// !defined(_MACH_VM_TYPES_H_)
 /*/
 /// ...
 /// MacOSX
 /*/
 #else /*/ defined(MACOSX) /*/
+typedef int BOOL;
+typedef void* pointer_t;
 #endif /*/ defined(MACOSX) /*/
+
+typedef const void* const_pointer_t;
 
 typedef char tchar_t;
 typedef uint8_t byte_t;
@@ -158,7 +168,6 @@ typedef uint16_t word_t;
 /// Unix to Windows types
 /// ...
 /*/
-typedef int BOOL;
 
 typedef char CHAR;
 typedef tchar_t TCHAR;
@@ -308,8 +317,6 @@ typedef const BYTE* PCBYTE;
 typedef const PCBYTE* PCPCBYTE;
 typedef PCBYTE* PPCBYTE;
 typedef PBYTE* PPBYTE;
-
-typedef void* pointer_t;
 
 typedef useconds_t nseconds_t;
 typedef useconds_t mseconds_t;
