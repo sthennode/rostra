@@ -1,2 +1,2 @@
 # rostra
-rostra -- platforms
+rostra -- platforms for speaking
