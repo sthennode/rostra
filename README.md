@@ -1,2 +1,2 @@
 # rostra
-rostra -- plural form of rostrum
+rostra -- platforms
